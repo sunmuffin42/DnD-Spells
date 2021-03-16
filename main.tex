@@ -3,30 +3,37 @@
 \usepackage[margin=.75in]{geometry}
 \usepackage{hyperref}
 \usepackage{lipsum}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
 \title{DnD Spells}
 
 \begin{document}
 % \section{Hello World}
 % \label{sec:hello}
 % \hyperref[sec:hello]{Word of text}
-Spell (Conc.)
-Class
-Save DC
-Attack Bonus
-Casting Time
-Range
-Duration
+\section{Spell table}
+\rowcolors{2}{gray!25}{white}
 
-\begin{tabular}{l|l|l|l|l|l|l}
-     Spell name (Conc.) & Source & Save/Attack & Casting Time & Casting Range & Effect Range & Duration \\
-     \hline
-     \hyperref[sec:GreenFlameBlade]{Green-flame blade}& thi & things & things & things & things & things
+\begin{tabular}{|l|p{9em}|c|p{4em}|p{3em}|p{3em}|l|l|}
+\rowcolor{gray!50}
+     Lvl & Spell name (Conc.) & Source & Save/ Attack & Casting Time & Casting Range & Effect Range & Duration \\
+     \hline\hline
+     0 & \hyperref[sec:GreenFlameBlade]{Green-flame blade}& Blood Hunter & things & things & things & things & things\\
+     0 & \hyperref[sec:ChillTouch]{Chill touch}& Blood Hunter & things & things & things & things & things\\
+     0 & \hyperref[sec:EldritchBlast]{Eldritch blast}& Warlock & things & things & things & things & things \\
+    
+\hline
 \end{tabular}
 
 \newpage
 \twocolumn
 \section{Green Flame Blade}
-Green-flame blade\label{sec:GreenFlameBlade}
+\label{sec:GreenFlameBlade}
 
+\section{Chill touch}
+\label{sec:ChillTouch}
+
+\section{Eldritch blast}
+\label{sec:EldritchBlast}
 
 \end{document}
